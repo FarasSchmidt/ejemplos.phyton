@@ -10,17 +10,17 @@
 
 import random
 
-# altura = int(input("Ingrese su altura en cm: "))
-# if altura < 160:
-#     respuesta = "Usted es Base"
-# elif altura > 161 and altura < 179:
-#     respuesta = "Usted es Escolta"
-# elif altura > 180 and altura < 199:
-#     respuesta = "Usted es Alero"
-# else:
-#     respuesta = "Usted es Ala-Pivot o Pivot"
+altura = int(input("Ingrese su altura en cm: "))
+if altura < 160:
+    respuesta = "Usted es Base"
+elif altura > 161 and altura < 179:
+    respuesta = "Usted es Escolta"
+elif altura > 180 and altura < 199:
+    respuesta = "Usted es Alero"
+else:
+    respuesta = "Usted es Ala-Pivot o Pivot"
 
-# print(respuesta)
+print(respuesta)
 
 
 #2. Calcular una nota aleatoria entre el 1 y el 10 inclusive, para luego mostrar un
