@@ -138,7 +138,7 @@ while True:
     elif numero_ingresado < 0:
         contador_negativos += 1
         acumulador_negativos += numero_ingresado
-
+# hola soy faras
     continua = str(input("Desea continuar? SI o NO: ")).lower()
     if continua == "no":
         break
