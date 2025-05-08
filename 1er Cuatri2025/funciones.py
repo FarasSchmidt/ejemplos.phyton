@@ -51,10 +51,13 @@ def area_circulo(radio : float) -> float:
 
 # 6
 def es_par_o_impar_mensaje(numero : int):
-    if numero % 2 == 0:
-        print("El número es par.")
+    if isinstance(numero, int):
+        if numero % 2 == 0:
+            print("El número es par.")
+        else:
+            print("El número es impar.")
     else:
-        print("El número es impar.")
+        return "No ha ingresado un numero entero"
 
 # 7
 def es_par(numero):
@@ -65,12 +68,12 @@ def es_par(numero):
     
 # 8
 def maximo_de_tres(a, b, c):
-    if a >= b and a >= c:
-        return a
-    elif b >= c:
-        return b
-    else:
-        return c
+        if a >= b and a >= c:
+            return a
+        elif b >= c:
+            return b
+        else:
+            return c
 
 # ejercicio clase
 def es_flotante(valor):
@@ -79,9 +82,16 @@ def es_flotante(valor):
         return True
     except ValueError:
         return False
-entrada = input("Ingrese un número flotante: ")
-if es_flotante(entrada):
-    numero = float(entrada)
-    print(f"El número es válido: {numero}")
-else:
-    print("Error: No es un número flotante válido.")
+# entrada = input("Ingrese un número flotante: ")
+# if es_flotante(entrada):
+#     numero = float(entrada)
+#     print(f"El número es válido: {numero}")
+# else:
+#     print("Error: No es un número flotante válido.")
+
+# 9 
+def calcular_potencia(base, potencia):
+    resultado_potencia = base ** potencia
+    return resultado_potencia
+
+# 10
