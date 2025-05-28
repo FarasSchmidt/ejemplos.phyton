@@ -76,7 +76,7 @@ def maximo_de_tres(a, b, c):
             return c
 
 # ejercicio clase
-def es_flotante(valor):
+def esFlotante(valor):
     try:
         float(valor)
         return True
